@@ -1,10 +1,8 @@
 import streamlit as st
-import cv2
 import numpy as np
-import os
-import tempfile
 import streamlit.components.v1 as components
 from ultralytics import YOLO
+import cv2
 # Load model details from pickle file
 def model(model_path):
     try:
@@ -314,5 +312,5 @@ def footer():
 # Run the app
 if __name__ == "__main__":
     nev()
-    main('model\healmet_detaction.pt')
+    main('healmet_detaction.pt')
     footer()
